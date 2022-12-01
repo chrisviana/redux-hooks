@@ -1,11 +1,20 @@
-export function Login({ usuario, setUsuario }) {
+import { useSelector } from 'react-redux'
+
+function Login() {
+    const nomeUsaurio = useSelector(function (state) {
+        return state.usuario
+    })
+
     return (
         <div>
             <input type="text"
-                value={usuario}
-                onChange={(event) => setUsuario(event.target.value)}
+                value={nomeUsaurio}
+
             /><br />
-            <span>Usuario: {usuario}</span>
+            <span>Usuario: {nomeUsaurio}</span>
         </div>
     )
 }
+
+
+export default Login

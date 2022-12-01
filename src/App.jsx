@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Login } from './components/Login';
+import Login from './components/Login';
 import { Sidebar } from "./components/Sidebar";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div>
-      <Login usuario={usuario} setUsuario={setUsuario} />
+      <Login />
       {
         logado && <Sidebar usuario={usuario} />
       }
