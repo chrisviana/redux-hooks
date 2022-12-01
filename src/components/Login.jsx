@@ -1,7 +1,11 @@
-export function Login(){
+export function Login({ usuario, setUsuario }) {
     return (
         <div>
-            Login
+            <input type="text"
+                value={usuario}
+                onChange={(event) => setUsuario(event.target.value)}
+            /><br />
+            <span>Usuario: {usuario}</span>
         </div>
     )
 }

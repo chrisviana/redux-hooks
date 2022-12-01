@@ -1,7 +1,10 @@
-export function Sidebar(){
-    return(
+import { AlterarUsuario } from "./AlterarUsuario";
+
+export function Sidebar({ usuario }) {
+    return (
         <div>
-            Sidebar
+            SideBar<br />
+            <AlterarUsuario usuario={usuario} />
         </div>
     )
 }

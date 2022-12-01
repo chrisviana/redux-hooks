@@ -1,7 +1,7 @@
-export function AlterarUsuario(){
+export function AlterarUsuario({ usuario }) {
     return (
         <div>
-            AlterarUsuario
+            AlterarUsuario: {usuario}
         </div>
     )
 }
